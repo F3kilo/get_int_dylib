@@ -4,7 +4,7 @@ extern "C" {
 
 fn main() {
     println!("Static lib integer: {}", unsafe { get_integer() });
-    println!("Executable integer: {}", unsafe { get_integer() });
+    println!("Executable integer: {}", unsafe { get_integer_exe() });
 }
 
 pub extern "C" fn get_integer_exe() -> i32 {
